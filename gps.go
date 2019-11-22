@@ -10,8 +10,8 @@ const (
 )
 
 type GpsInfo struct {
-	jd float64
-	wd float64
+	Jd float64
+	Wd float64
 }
 
 // 求弧度
