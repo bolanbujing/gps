@@ -22,10 +22,10 @@ func radian(d float64) float64 {
 //计算距离
 
 func GetDistance(a, b GpsInfo) float64 {
-	radLat1 := radian(a.wd)
-	radLat2 := radian(b.wd)
+	radLat1 := radian(a.Wd)
+	radLat2 := radian(b.Wd)
 	i := radLat1 - radLat2
-	j := radian(a.jd) - radian(b.jd)
+	j := radian(a.Jd) - radian(b.Jd)
 
 	dst := 2 * math.Asin((math.Sqrt(math.Pow(math.Sin(i/2), 2) + math.Cos(radLat1)*math.Cos(radLat2)*math.Pow(math.Sin(j/2), 2))))
 
